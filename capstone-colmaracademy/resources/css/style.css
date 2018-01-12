@@ -1,0 +1,594 @@
+/*Universal Styles*/
+
+/*had some struggles and went down some wrong rabbit holes.. so I'm sure there are some things in here that
+could/should be better.  And I would love any insight into a more elegant way to show/hide desktop/mobile elements.*/
+
+/* latin*/
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/_mlO9_1N7oXYhEnEzC2l-g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin*/
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v7/IUSlgBbgyuDQpy87mBOAc_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin*/
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v7/0hS39AKxpJlEXQF3mVPgrvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');*/
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+.html {
+  font-size: 14px;
+}
+
+.bigcontainer {
+  margin: 0 auto;
+  width: 1200px;
+  color: #262626;
+  font-family: 'Rubik-Regular', sans-serif, fallback, sans-serif;
+  background-color: #F5F5F5;
+  border: solid #D3D3D3 2px;
+}
+
+a:link {
+  color: #262626;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #262626;
+  text-decoration: none;
+}
+
+
+/*Header*/
+.header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 24px;
+  height: 32px;
+}
+
+.colmar,
+.academy {
+  height: 32px;
+  font-size: 24px;
+}
+
+
+.nav {
+  padding-right: 24px;
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul span:hover {
+  border-bottom: solid #48D1CC 2px;
+}
+
+.header .nav .square {
+  width: 16px;
+  height: 64px;
+  background-color: #48D1CC;
+}
+
+
+
+
+/*Start Here*/
+
+.starthere {
+  background-color: #D3D3D3;
+  display: flex;
+}
+
+.starthere img {
+  padding: 32px 24px;
+  width: 60%;
+  height: 60%;
+}
+
+.starttext {
+  padding-left: 16px;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.starttext h2 {
+  font-size: 2.6rem;
+}
+
+.starttext p {
+  font-size: 1.6rem;
+}
+
+.starttext h5 {
+  font-size: 1.15rem;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: normal;
+  background-color: #262626;
+  color: white;
+  padding: 8px 7em;
+}
+
+/*button animation*/
+.button a:link {
+  color: white;
+}
+
+.button a:visited{
+  color: white;
+}
+
+.button:hover {
+  background-color: #666666;
+  transition: background-color .1s linear 0s;
+}
+
+
+/*events*/
+
+.events {
+  height: 700px;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-story {
+  width: 60%;
+}
+
+.event-main-image {
+  padding: 0px 24px;
+}
+
+.event-main-image img {
+  width: 100%
+}
+
+.event-main-description h2 {
+  margin: 0px;
+  padding: 32px 0px 32px 24px;
+  font-size: 2.25rem;
+}
+
+.event-main-description p {
+  margin: 0px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+  font-size: 1.17rem;
+}
+
+.quote p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.event-image {
+  width: 35%;
+  padding: 16px;
+}
+
+.event-image img {
+  width: 100%;
+  height: auto;
+}
+
+.event-description {
+  width: 65%;
+}
+
+.event-description h3 {
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+.event-description p {
+  margin: 0px;
+  padding: 8px 0px;
+  font-size: 1.05rem;
+}
+
+.event:hover {
+  background-color: #D3D3D3;
+}
+
+.event a:hover {
+  border-bottom: solid #262626 2px;
+}
+
+.event a:link {
+  color: #262626;
+}
+
+.event a:visited {
+  color: #262626;
+}
+
+
+
+/*course catalog*/
+
+.catalog {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.learning {
+  padding: 32px 0px 16px 0px;
+}
+
+.learning h2 {
+  margin: 0px;
+  font-size: 2.5rem;
+}
+
+.courses {
+  padding: 16px 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  background-color: white;
+  margin: 0px 16px 16px 16px;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-image img {
+  width: 100%;
+  height: auto;
+}
+
+.course-description {
+  padding: 16px 32px 24px 16px;
+}
+
+.course-description p {
+  margin: 0px;
+  font-size: 1.05rem;
+}
+.course-description h3 {
+  margin: 0px;
+  font-size: 1.5rem;
+}
+.course-description h4 {
+  margin: 0px;
+  padding: 8px 0px;
+  font-size: 1.05rem;
+}
+
+
+/*catalog animation*/
+.course a:hover {
+  border-bottom: solid #262626 2px;
+}
+
+.course:hover {
+  border: solid #262626 2px;
+}
+
+
+
+
+/*thesis*/
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesis-title {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.thesis-title h2 {
+  margin: 0px;
+  font-size: 2.5rem;
+}
+
+.newsfeed {
+  padding: 0px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.news {
+  width: 40%;
+  display: flex;
+}
+
+.main {
+  width: 60%;
+  padding: 0px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .news-video video {
+  width: 100%;
+  height: auto;
+}
+
+.main .news-bite p {
+  font-size: 1.17rem;
+}
+
+.article {
+  width: 35%;
+}
+
+.news-image {
+  width: 40%;
+  padding: 16px;
+}
+
+.news-image img {
+  width: 100%;
+}
+
+.news-bite {
+  width: 100%;
+  padding-top: 24px;
+}
+
+.news-bite h3 {
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+.newsbite p {
+  margin: 0px;
+  font-size: 1.17rem;
+}
+
+
+/*thesis animation*/
+.news a:hover {
+  border-bottom: solid #262626 2px;
+}
+
+.news:hover {
+  background-color: #D3D3D3;
+}
+
+/*footer*/
+
+.footer {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: solid #e6e6e6 2px;
+}
+
+.copyright {
+  padding-left: 24px;
+  padding-top: 16px;
+}
+
+.copyright p {
+  margin: 0px;
+}
+
+.terms {
+  padding-right: 24px;
+  padding-top: 16px;
+}
+
+.terms span {
+  padding-left: 8px;
+}
+
+
+/*footer animation*/
+.footer a:hover {
+  border-bottom: solid #262626 2px;
+}
+
+
+
+/*mobile considerations*/
+
+@media only screen and (min-width: 481px) {
+   .mobile {
+    display: none;
+  }
+}
+
+/*I realize that there will be some rules that could be grouped.  But my I function best
+being able to break my code up into different sections, which is why you will see them listed separately*/
+
+/*mobile header*/
+@media only screen and (max-width: 480px) {
+
+  .bigcontainer {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .nav,
+  .header span {
+    display: none;
+  }
+
+  .logo {
+    padding: 0px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+/*mobile starthere*/
+
+  .starthere {
+    display: block;
+}
+
+  .starthere img {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .starttext {
+    padding: 0px;
+  }
+  .starttext h2 {
+    margin: 0px;
+    padding: 32px 16px;
+    font-size: 2.6rem;
+  }
+
+  .starttext p {
+    margin: 0px;
+    padding-left: 16px;
+  }
+
+  .starttext h5 {
+    margin: 24px 16px 32px 16px;
+
+    padding: 8px auto;
+  }
+
+  /*mobile events*/
+
+  .events {
+    height: auto;
+    padding-top: 16px;
+    flex-wrap: nowrap;
+  }
+
+
+  .main-story {
+    display: none;
+  }
+
+  .story {
+    width: 100%;
+    display: block;
+    padding-bottom: 64px;
+
+  }
+
+  .event-image {
+    width: auto;
+}
+
+  .event-description {
+    padding-left: 16px;
+  }
+
+/*mobile courses*/
+
+  .catalog {
+    width: 100%;
+    background-color: white;
+    border-top: solid #e6e6e6 1px;
+    border-bottom: solid #e6e6e6 1px;
+  }
+
+  .courses {
+    padding: 16px 0px;
+    width: 100%;
+    flex-direction: column;
+}
+
+  .course-description {
+    width: 360px;
+    background-color: #D3D3D3;
+  }
+
+
+  .course {
+    max-width: 480px;
+  }
+
+/*mobile thesis*/
+  .news:hover {
+    background-color: white;
+  }
+
+
+  .main {
+    padding: 0px;
+    width: 100%;
+  }
+
+
+  video {
+    padding-bottom: 24px;
+  }
+
+  .news-image,
+  .news-bite {
+    padding: 0px;
+  }
+
+
+/*mobile footer*/
+
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+.copyright {
+  padding-bottom: 16px;
+}
+
+.terms {
+  display: none;
+}
